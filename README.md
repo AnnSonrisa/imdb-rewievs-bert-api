@@ -4,6 +4,20 @@
 3.	Реализует асинхронный pipeline через Celery + Redis
 4.	Предоставит REST API для поиска похожих отзывов по смыслу
 
+## Требуемый стек
+●	Python 3.11+
+
+●	FastAPI + Pydantic
+
+●	PostgreSQL (+ pgvector для векторного поиска)
+
+●	Redis + Celery
+
+●	PyTorch (CPU) + Transformers
+
+●	SQLAlchemy (async) / Psycopg3
+
+
 ## Список эндпоинтов:
 - POST http://localhost:8000/api/find_similar - поиск похожих отзывов по смыслу
   Формат запроса: {"text": "similar_review"}
